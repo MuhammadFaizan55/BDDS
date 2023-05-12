@@ -27,7 +27,7 @@ classifier_name = st.sidebar.selectbox("Select Classifier", ("KNN", "SVM", "Rand
 
 def get_dataset(dataset_name):
     if dataset_name == "dengue":
-        data = pd.read_csv("C:\\Users\\Muhammad Faizan\\OneDrive\\Desktop\stream\\dengue_dataset gog_doc.csv")
+        data = pd.read_csv("dengue_dataset gog_doc.csv")
         x = data.iloc[:, 0:13]
         y = data.iloc[:, 13:]
         x = x.dropna()
